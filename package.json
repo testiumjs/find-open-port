@@ -1,0 +1,44 @@
+{
+  "name": "find-open-port",
+  "version": "0.0.0",
+  "description": "Returns a promise for an open port on localhost",
+  "main": "find-open-port.js",
+  "scripts": {
+    "pretest": "npub prep",
+    "test": "tap test.js",
+    "posttest": "npub verify"
+  },
+  "files": [
+    "find-open-port.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/testiumjs/find-open-port.git"
+  },
+  "keywords": [
+    "find",
+    "open",
+    "port"
+  ],
+  "author": "Jan Krems",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/testiumjs/find-open-port/issues"
+  },
+  "homepage": "https://github.com/testiumjs/find-open-port#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "license": {
+      "exclude": [
+        "test.js"
+      ]
+    }
+  },
+  "devDependencies": {
+    "npub": "^2.2.0",
+    "tap": "^1.4.0"
+  },
+  "dependencies": {
+    "bluebird": "^2.9.34"
+  }
+}
