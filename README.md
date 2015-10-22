@@ -1,4 +1,4 @@
-# Find an Open Port
+# Find an Open Port [![Build Status](https://travis-ci.org/testiumjs/find-open-port.svg?branch=master)](https://travis-ci.org/testiumjs/find-open-port)
 
 ## Install
 
