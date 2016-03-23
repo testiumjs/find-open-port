@@ -36,7 +36,8 @@
     "nlm": "^2.0.0"
   },
   "author": {
-    "name": "Jan Krems"
+    "name": "Groupon",
+    "email": "opensource@groupon.com"
   },
   "keywords": [
     "find",
