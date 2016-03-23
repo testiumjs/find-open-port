@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Returns a promise for an open port on localhost",
   "license": "BSD-3-Clause",
-  "main": "find-open-port.js",
+  "main": "lib/find-open-port.js",
   "homepage": "https://github.com/testiumjs/find-open-port#readme",
   "repository": {
     "type": "git",
@@ -33,8 +33,7 @@
     "eslint": "^1.0.0",
     "eslint-config-groupon": "^2.0.0",
     "mocha": "^2.0.0",
-    "nlm": "^2.0.0",
-    "tap": "^1.4.0"
+    "nlm": "^2.0.0"
   },
   "author": {
     "name": "Jan Krems"
