@@ -2,43 +2,52 @@
   "name": "find-open-port",
   "version": "1.0.0",
   "description": "Returns a promise for an open port on localhost",
-  "main": "find-open-port.js",
-  "scripts": {
-    "pretest": "npub prep",
-    "test": "tap test.js",
-    "posttest": "npub verify"
-  },
-  "files": [
-    "find-open-port.js"
-  ],
+  "license": "BSD-3-Clause",
+  "main": "lib/find-open-port.js",
+  "homepage": "https://github.com/testiumjs/find-open-port#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/testiumjs/find-open-port.git"
+    "url": "git+ssh://git@github.com/testiumjs/find-open-port"
+  },
+  "bugs": {
+    "url": "https://github.com/testiumjs/find-open-port/issues",
+    "chat": "http://signup.testiumjs.com/"
+  },
+  "scripts": {
+    "pretest": "eslint lib test",
+    "test": "mocha",
+    "posttest": "nlm verify"
+  },
+  "nlm": {
+    "license": {
+      "files": [
+        "lib"
+      ]
+    }
+  },
+  "dependencies": {
+    "bluebird": "^3.3.3"
+  },
+  "devDependencies": {
+    "assertive": "^2.0.0",
+    "eslint": "^1.0.0",
+    "eslint-config-groupon": "^2.0.0",
+    "mocha": "^2.0.0",
+    "nlm": "^2.0.0"
+  },
+  "author": {
+    "name": "Groupon",
+    "email": "opensource@groupon.com"
   },
   "keywords": [
     "find",
     "open",
     "port"
   ],
-  "author": "Jan Krems",
-  "license": "BSD-3-Clause",
-  "bugs": {
-    "url": "https://github.com/testiumjs/find-open-port/issues"
-  },
-  "homepage": "https://github.com/testiumjs/find-open-port#readme",
+  "files": [
+    "find-open-port.js"
+  ],
   "publishConfig": {
-    "registry": "https://registry.npmjs.org",
-    "license": {
-      "exclude": [
-        "test.js"
-      ]
-    }
-  },
-  "devDependencies": {
-    "npub": "^2.2.0",
-    "tap": "^1.4.0"
-  },
-  "dependencies": {
-    "bluebird": "^2.9.34"
+    "registry": "https://registry.npmjs.org"
   }
 }
