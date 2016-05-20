@@ -1,3 +1,9 @@
+### 1.0.2
+
+* Use default pkg.json#files style - **[@jkrems](https://github.com/jkrems)** [#3](https://github.com/testiumjs/find-open-port/pull/3)
+  - [`eeb704d`](https://github.com/testiumjs/find-open-port/commit/eeb704dcb785d88b7c74d2987e73f9eee0f4bbf9) **chore:** Use default pkg.json#files style
+
+
 ### 1.0.1
 
 * Apply latest nlm generator - **[@i-tier-bot](https://github.com/i-tier-bot)** [#2](https://github.com/testiumjs/find-open-port/pull/2)
