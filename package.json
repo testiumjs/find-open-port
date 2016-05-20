@@ -45,7 +45,8 @@
     "port"
   ],
   "files": [
-    "find-open-port.js"
+    "*.js",
+    "lib"
   ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
