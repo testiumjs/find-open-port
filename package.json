@@ -15,8 +15,14 @@
   },
   "scripts": {
     "pretest": "eslint lib test",
-    "test": "mocha",
+    "test": "nyc mocha",
     "posttest": "nlm verify"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "mocha": {
+    "recursive": true
   },
   "nlm": {
     "license": {
@@ -25,15 +31,18 @@
       ]
     }
   },
-  "dependencies": {
-    "bluebird": "^3.3.3"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "assertive": "^2.0.0",
-    "eslint": "^1.0.0",
-    "eslint-config-groupon": "^2.0.0",
-    "mocha": "^2.0.0",
-    "nlm": "^2.0.0"
+    "eslint": "^6.8.0",
+    "eslint-config-groupon": "^9.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-mocha": "^6.3.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "mocha": "^7.1.1",
+    "nlm": "^4.1.1",
+    "nyc": "^15.0.0",
+    "prettier": "^2.0.2"
   },
   "author": {
     "name": "Groupon",
