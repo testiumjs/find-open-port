@@ -1,16 +1,17 @@
 'use strict';
-var net = require('net');
 
-var assert = require('assertive');
+const net = require('net');
 
-var findPort = require('../');
+const assert = require('assert');
 
-describe('Finding an open port', function () {
-  it('can listen on the returned port', function (done) {
-    findPort().then(function (port) {
-      var server = net.createServer();
-      server.listen(port, function () {
-        assert.equal(port, server.address().port);
+const findPort = require('../');
+
+describe('Finding an open port', () => {
+  it('can listen on the returned port', done => {
+    findPort().then(port => {
+      const server = net.createServer();
+      server.listen(port, () => {
+        assert.strictEqual(server.address().port, port);
         server.close();
         done();
       });
@@ -18,30 +19,29 @@ describe('Finding an open port', function () {
   });
 });
 
-describe('Checking if a port is available', function () {
-  var port;
-  before(function () {
-    return findPort().then(function (p) { port = p; });
+describe('Checking if a port is available', () => {
+  let port, server;
+  before(async () => {
+    port = await findPort();
+  });
+  after(() => server.close());
+
+  it('returns an available port', async () => {
+    const available = await findPort.isAvailable(port);
+
+    assert.ok(available);
   });
 
-  it('returns an available port', function () {
-    return findPort.isAvailable(port)
-      .then(function (available) {
-        assert.expect(available);
-      });
-  });
-
-  describe('after listening on the port', function () {
-    before(function (done) {
-      var server = net.createServer();
+  describe('after listening on the port', () => {
+    before(done => {
+      server = net.createServer();
       server.listen(port, done);
     });
 
-    it('is no longer available', function () {
-      return findPort.isAvailable(port)
-        .then(function (available) {
-          assert.expect(!available);
-        });
+    it('is no longer available', async () => {
+      const available = await findPort.isAvailable(port);
+
+      assert.ok(!available);
     });
   });
 });
