@@ -1,3 +1,18 @@
+### 2.0.0 - 2020-03-26
+
+#### Breaking Changes
+
+- drop node 8 / 6 / 4 & 0.1x support
+- `findPort()` is no longer based on Bluebird
+
+*See: [`a1c31eb`](https://github.com/testiumjs/find-open-port/commit/a1c31eb474f28ba84c6ab2858bebc1d8935864a8)*
+
+#### Commits
+
+* chore: drop node 8 and below support & remove bluebird & upgrade packages - **[@aaarichter](https://github.com/aaarichter)** [#5](https://github.com/testiumjs/find-open-port/pull/5)
+  - [`a1c31eb`](https://github.com/testiumjs/find-open-port/commit/a1c31eb474f28ba84c6ab2858bebc1d8935864a8) **refactor:** drop node 8 and below support & remove bluebird & upgrade packages
+
+
 ### 1.0.2
 
 * Use default pkg.json#files style - **[@jkrems](https://github.com/jkrems)** [#3](https://github.com/testiumjs/find-open-port/pull/3)
