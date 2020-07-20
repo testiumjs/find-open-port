@@ -1,3 +1,9 @@
+### 2.0.1 - 2020-07-20
+
+* chore(deps): bump lodash from 4.17.15 to 4.17.19 - **[@dependabot[bot]](https://github.com/apps/dependabot)** [#6](https://github.com/testiumjs/find-open-port/pull/6)
+  - [`30b5542`](https://github.com/testiumjs/find-open-port/commit/30b5542dfdcc6914d64eec437ff04bc7a9ea0951) **chore:** bump lodash from 4.17.15 to 4.17.19 - see: [4](- [Commits](https://github.com/lodash/lodash/compare/4)
+
+
 ### 2.0.0 - 2020-03-26
 
 #### Breaking Changes
