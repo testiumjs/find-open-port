@@ -1,3 +1,9 @@
+### 2.0.2 - 2021-02-17
+
+* chore(deps): bump ini from 1.3.5 to 1.3.8 - **[@dependabot[bot]](https://github.com/apps/dependabot)** [#7](https://github.com/testiumjs/find-open-port/pull/7)
+  - [`518a6c9`](https://github.com/testiumjs/find-open-port/commit/518a6c952a8596cae71de90a4ab33e36a6a66da9) **chore:** bump ini from 1.3.5 to 1.3.8 - see: [v1](- [Commits](https://github.com/isaacs/ini/compare/v1)
+
+
 ### 2.0.1 - 2020-07-20
 
 * chore(deps): bump lodash from 4.17.15 to 4.17.19 - **[@dependabot[bot]](https://github.com/apps/dependabot)** [#6](https://github.com/testiumjs/find-open-port/pull/6)
