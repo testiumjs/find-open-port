@@ -1,3 +1,10 @@
+### v2.0.3 (2021-03-26)
+
+#### 🏡 Internal
+
+* [#8](https://github.com/testiumjs/find-open-port/pull/8) chore: switch to main & update packages ([@aaarichter](https://github.com/aaarichter)) 
+
+
 ### 2.0.2 - 2021-02-17
 
 * chore(deps): bump ini from 1.3.5 to 1.3.8 - **[@dependabot[bot]](https://github.com/apps/dependabot)** [#7](https://github.com/testiumjs/find-open-port/pull/7)
